@@ -67,49 +67,10 @@ python manage.py runserver
 
 Visit: http://127.0.0.1:8000/
 
-## Environment / Secrets
-Create `.env` (or export vars) and override in `settings.py` if you later deploy:
-```
-SECRET_KEY=replace-this
-DEBUG=False
-ALLOWED_HOSTS=yourdomain.com
-```
-Do not commit real secrets.
+## Screenshots
+<img width="1917" height="887" alt="image" src="https://github.com/user-attachments/assets/6b7ab0a1-1966-498a-b747-b938bf56d99c" />
+<img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/9853905c-185d-42aa-8a73-6c4ae4826557" />
+<img width="1919" height="905" alt="image" src="https://github.com/user-attachments/assets/5b335fe1-2a71-4ae2-84df-8355469d2b56" />
 
-## Testing (Add Later)
-Potential directions:
-- Model tests for Order / OrderItem totals
-- View tests for cart + checkout
-- Integration test simulating guest checkout flow
 
-## Potential Enhancements (Talking Points)
-- Replace SQLite with Postgres; add Docker.
-- Payment integration (Stripe) in a `payments` app.
-- Inventory tracking + low-stock signals.
-- REST or GraphQL API layer (Django REST Framework).
-- Caching layer for product listing (Redis).
-- CI pipeline (GitHub Actions) + test coverage badge.
-- Image optimization / S3 offloading.
 
-## Why This Project
-Demonstrates:
-- Clean separation of concerns (views, templates, static assets)
-- Secure server-side total validation (prevents client tampering)
-- Support for both guest and authenticated user carts
-- Extensible foundation for real commerce features
-
-## Screenshots (Optional)
-(Add screenshots of catalog, cart, checkout.)
-
-## License
-MIT (adjust if needed).
-
-## Recruiter / Interview Notes
-Discuss how you would:
-- Introduce payments safely (idempotent webhooks)
-- Harden security (CSRF everywhere except validated JSON endpoints)
-- Scale static/media via CDN
-- Add automated order confirmation emails
-
----
-> Built as a demonstration project. Not production-secured.
